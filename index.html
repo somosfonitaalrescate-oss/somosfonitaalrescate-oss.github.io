@@ -476,8 +476,26 @@ section{
 }
 
 
-/* NOSOTROS */
+  .boton-whatsapp{
+    display:inline-block;
+    margin-top:16px;
+    padding:12px 22px;
+    background:linear-gradient(135deg, var(--fucsia), var(--morado));
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+    border-radius:25px;
+    box-shadow:0 5px 14px rgba(68,32,125,.18);
+    transition:.2s;
+}
 
+.boton-whatsapp:hover{
+    transform:translateY(-2px);
+    box-shadow:0 7px 18px rgba(68,32,125,.25);
+}
+/* NOSOTROS */
+  
 .creado{
   display:grid;
   grid-template-columns:.7fr 1.3fr;
@@ -942,8 +960,6 @@ Talleres de Comprensión Lectora
 
 
 <div class="lista-talleres">
-
-
 <div class="taller">
 <div class="numero">1</div>
 <div class="portada-taller">
@@ -952,7 +968,13 @@ Talleres de Comprensión Lectora
 </div>  
 <h3>Pedrito y el Lobo</h3>
 <div class="tipo">FÁBULA</div>
-<div class="precio-taller">$5.000</div>
+  <div class="precio-taller">$5.000</div>
+  <a href="https://wa.me/56950093301?text=Hola%20Pili%20💜%20Quiero%20comprar%20el%20taller%20Pedrito%20y%20el%20Lobo%20de%20Fonita%20al%20Rescate.%20¿Me%20indicas%20cómo%20realizar%20la%20compra?"
+   target="_blank"
+   class="boton-whatsapp">
+   💬 Comprar por WhatsApp
+</a>
+
 </div>
 
 
@@ -963,7 +985,7 @@ Talleres de Comprensión Lectora
          alt="Cuento Pepa aprende a compartir">
 </div>
 <h3>Pepa aprende a compartir</h3>
-<div class="tipo">CUENTO</div>
+<div class="tipo">CUENTO</div
 <div class="precio-taller">$5.000</div>
 </div>
 
