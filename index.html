@@ -267,21 +267,7 @@ section{
     line-height:1.7;
     margin:0;
 }
-  .imagen-pack-difonos{
-    max-width:900px;
-    margin:35px auto 45px;
-    text-align:center;
-}
-
-.imagen-pack-difonos img{
-    width:100%;
-    max-width:650px;
-    height:auto;
-    display:block;
-    margin:0 auto;
-    border-radius:22px;
-    box-shadow:0 8px 22px rgba(68,32,125,.10);
-}
+  
   .compra-pack{
     max-width:900px;
     margin:0 auto 35px;
@@ -521,6 +507,20 @@ section{
     background:var(--rosa-claro);
     padding:12px;
     box-sizing:border-box;
+}
+  .producto-icono.portada-producto{
+    height:520px;
+    background:var(--rosa-claro);
+    padding:12px;
+    box-sizing:border-box;
+}
+
+.producto-icono.portada-producto img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+    border-radius:14px;
 }
 .producto:nth-child(1) .producto-icono{
   background:var(--rosa-claro);
@@ -1093,8 +1093,9 @@ Ver material
 
 <div class="producto">
 
-<div class="producto-icono">
-🔤
+<div class="producto-icono portada-producto">
+    <img src="Portada Pack 13 Dífonos Consonáticos.jpeg"
+         alt="Pack 13 Dífonos Consonánticos">
 </div>
 
 <h3>
@@ -1648,10 +1649,6 @@ Talleres de Comprensión Lectora
   </p>
 </div>
 
-  <div class="imagen-pack-difonos">
-  <img src="Portada Pack 13 Dífonos Consonáticos.jpeg"
-       alt="Pack 13 Dífonos Consonánticos">
-</div>
 </section>
 <section class="como-comprar">
 
