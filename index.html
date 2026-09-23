@@ -910,10 +910,65 @@ footer h2{
 
 }
 
+  /* ===== SECCIÓN EVALUACIONES ===== */
+
+.evaluaciones{
+padding:55px 20px;
+background:#fff7fc;
+}
+
+.servicios-evaluacion{
+max-width:1250px;
+margin:30px auto 0;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.servicio-evaluacion{
+background:white;
+border:2px solid #eee8ff;
+border-radius:22px;
+padding:28px 23px;
+box-shadow:0 6px 16px rgba(80,45,130,.07);
+display:flex;
+flex-direction:column;
+text-align:center;
+}
+
+.icono-servicio{
+font-size:46px;
+margin-bottom:12px;
+}
+
+.servicio-evaluacion h3{
+color:#4b1597;
+font-size:21px;
+margin:5px 0 14px;
+min-height:52px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.servicio-evaluacion p{
+line-height:1.6;
+margin-bottom:22px;
+flex-grow:1;
+}
+
+@media (max-width: 800px){
+.servicios-evaluacion{
+grid-template-columns:1fr;
+}
+.evaluaciones{
+padding:40px 16px;
+}
+}
+  
 </style>
 </head>
-
-
+  
 <body>
 
 
@@ -2330,6 +2385,59 @@ class="boton-whatsapp">
 
 </div>  
     
+</section>
+  
+ <section class="evaluaciones">
+
+<h2 class="titulo-seccion">
+💜 Solicita tu hora de <span>evaluación</span>
+</h2>
+
+<p class="intro-pack">
+Selecciona el servicio que necesitas para solicitar tu hora de evaluación. 📍 Atención presencial en La Serena.
+</p>
+
+   <div class="servicios-evaluacion">
+
+<div class="servicio-evaluacion">
+<div class="icono-servicio">🗣️</div>
+<h3>Evaluación de Lenguaje Infanto-Juvenil</h3>
+<p>Evaluación de habilidades lingüísticas y comunicativas de acuerdo con la edad y el motivo de consulta.</p>
+
+<a href="https://wa.me/56950093301?text=Hola%20Pili,%20quisiera%20solicitar%20una%20hora%20para%20evaluaci%C3%B3n%20de%20lenguaje%20infanto-juvenil"
+target="_blank"
+class="boton-whatsapp">
+💬 Solicitar evaluación de lenguaje
+</a>
+
+</div>
+
+<div class="servicio-evaluacion">
+<div class="icono-servicio">🧩</div>
+<h3>Evaluación ADOS-2</h3>
+<p>Aplicación de ADOS-2 como parte del proceso de evaluación ante sospecha de Trastorno del Espectro Autista.</p>
+
+<a href="https://wa.me/56950093301?text=Hola%20Pili,%20quisiera%20solicitar%20una%20hora%20para%20evaluaci%C3%B3n%20ADOS-2"
+target="_blank"
+class="boton-whatsapp">
+💬 Solicitar evaluación ADOS-2
+</a>
+
+</div>
+
+<div class="servicio-evaluacion">
+<div class="icono-servicio">📚</div>
+<h3>Evaluación de Lectoescritura</h3>
+<p>Evaluación de habilidades relacionadas con la lectura, escritura y procesamiento fonológico.</p>
+
+<a href="https://wa.me/56950093301?text=Hola%20Pili,%20quisiera%20solicitar%20una%20hora%20para%20evaluaci%C3%B3n%20de%20lectoescritura"
+target="_blank"
+class="boton-whatsapp">
+💬 Solicitar evaluación de lectoescritura
+</a>
+
+</div>
+</div>
 </section>
   
   <section class="como-comprar">
