@@ -393,8 +393,14 @@ section{
   max-width:1200px;
   margin:auto;
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(8,1fr);
   gap:18px;
+}
+.categoria{
+grid-column:span 2;
+}
+.categoria:nth-child(5){
+grid-column:2 / span 2;
 }
 
 .categoria{
@@ -433,7 +439,7 @@ background:var(--turquesa-claro);
 }
 
 .emoji{
-  font-size:42px;
+  font-size:64px;
   margin-bottom:12px;
 }
 
@@ -839,6 +845,12 @@ footer h2{
   .categorias{
     grid-template-columns:repeat(3,1fr);
   }
+  .categoria{
+grid-column:auto;
+}
+.categoria:nth-child(5){
+grid-column:auto;
+}
 
   .productos{
     grid-template-columns:1fr;
@@ -902,7 +914,12 @@ footer h2{
   .categorias{
     grid-template-columns:repeat(2,1fr);
   }
-
+.categoria{
+grid-column:auto;
+}
+.categoria:nth-child(5){
+grid-column:auto;
+}
   .lista-talleres{
     grid-template-columns:1fr;
   }
