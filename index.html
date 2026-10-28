@@ -497,6 +497,7 @@ margin-bottom: 16px !important;
   gap:28px;
 }
 
+
 .producto {
   background: white;
   border-radius: 28px;
@@ -504,81 +505,94 @@ margin-bottom: 16px !important;
   border: 2px solid #eee7ff;
   box-shadow: 0 10px 28px rgba(68,32,125,.09);
 
-  display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  column-gap: 28px;
-  row-gap: 14px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
   text-align: left;
 }
-.producto-icono{
-    height:320px;
-    border-radius:22px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:70px;
-    margin-bottom:0;
-    overflow:hidden;
-}
-.producto-icono.portada-comprension{
-    height:520px;
-    background:var(--rosa-claro);
-    padding:12px;
-    box-sizing:border-box;
-}
-  .producto-icono.portada-producto{
-    height:420px;
-    background:var(--rosa-claro);
-    padding:12px;
-    box-sizing:border-box;
+
+/* Portadas */
+.producto-icono {
+  height: auto;
+  min-height: 0;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 4px;
 }
 
-.producto-icono.portada-producto img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    display:block;
-    border-radius:14px;
-}
-.producto:nth-child(1) .producto-icono{
-  background:var(--rosa-claro);
+.producto-icono.portada-comprension,
+.producto-icono.portada-producto {
+  height: auto;
+  min-height: 0;
+  background: var(--rosa-claro);
+  padding: 12px;
+  box-sizing: border-box;
 }
 
-.producto:nth-child(2) .producto-icono{
-  background:var(--turquesa-claro);
+.producto-icono.portada-producto img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 390px;
+  object-fit: contain;
+  border-radius: 14px;
 }
 
-.producto:nth-child(3) .producto-icono{
-  background:var(--morado-claro);
+.producto:nth-child(1) .producto-icono {
+  background: var(--rosa-claro);
 }
 
-.producto h3{
-  color:var(--morado-oscuro);
-  font-size:23px;
-  margin-bottom:12px;
+.producto:nth-child(2) .producto-icono {
+  background: var(--turquesa-claro);
 }
 
-.producto p{
-  min-height:72px;
+.producto:nth-child(3) .producto-icono {
+  background: var(--morado-claro);
 }
 
-.precio{
-  font-size:31px;
-  color:var(--turquesa);
-  font-weight:900;
-  margin:18px 0;
+/* Textos sin espacios forzados */
+.producto h3 {
+  color: var(--morado-oscuro);
+  font-size: 23px;
+  margin: 0 0 4px;
 }
 
-.boton-producto{
-  display:inline-block;
-  padding:12px 26px;
-  border-radius:30px;
-  background:var(--rosa);
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
+.producto p {
+  min-height: 0;
+  margin: 0 0 8px;
+  line-height: 1.6;
 }
+
+/* Precios */
+.producto .precio {
+  font-size: 31px;
+  color: var(--turquesa);
+  font-weight: 900;
+  margin: 8px 0;
+}
+
+/* Botones con degradado rosado a morado */
+.productos .boton-producto,
+.productos .boton-whatsapp {
+  display: inline-block;
+  align-self: flex-start;
+  width: auto;
+  max-width: 100%;
+  padding: 12px 26px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #f43fa5, #7434d8);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 
 
 /* TALLERES INDIVIDUALES */
